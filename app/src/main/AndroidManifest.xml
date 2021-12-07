@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ocnyang.recyclerviewevent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".swipe_and_drag.ListViewActivity"
+            android:label="ListView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".swipe_and_drag.GridViewActivity"
+            android:label="GridView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".diff_util.DiffUtilActivity"
+            android:label="DiffUtil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".reuse_disorder.EleganceMethodActivity"
+            android:label="复用错乱"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notify_item.NotifyItemActivity"
+            android:exported="true"
+            android:label="定向刷新"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".paging3.PagingActivity"
+            android:exported="true"
+            android:label="Paging 3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".concat_adapter.ConcatAdapterActivity"
+            android:exported="true"
+            android:label="ConcatAdapter"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
